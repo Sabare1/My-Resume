@@ -54,11 +54,15 @@
         }
     </style>
     <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === '' || content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
         }
-    </script>
+    }
+</script>
 </head>
 <body>
     <div class="container">
