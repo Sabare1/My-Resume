@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabaregirivasan M - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+        .toggle {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sabaregirivasan M</h1>
+        <p><strong>Software Engineer</strong></p>
+        <p>Vellore, Tamil Nadu | <a href="mailto:sabaregirivasan@gmail.com">sabaregirivasan@gmail.com</a> | 9344920857</p>
+        
+        <div class="section">
+            <h2 class="toggle" onclick="toggleContent('profile')">Profile</h2>
+            <p id="profile" class="content">A technically adept pre-final year student with a strong foundation in software engineering. Possessing robust management skills, including effective communication, problem-solving, and team collaboration.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="toggle" onclick="toggleContent('education')">Education</h2>
+            <div id="education" class="content">
+                <p><strong>M.Tech Integrated Software Engineering</strong> - Vellore Institute Of Technology, Vellore (CGPA: 8.28)</p>
+                <p><strong>Higher Secondary Education</strong> - Lakshmi Garden School, Vellore (Percentage: 91.3%)</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="toggle" onclick="toggleContent('skills')">Skills</h2>
+            <ul id="skills" class="content">
+                <li><strong>Programming Languages:</strong> Java, Python, SQL</li>
+                <li><strong>Tools:</strong> MS Excel, Canva, Selenium, JUnit</li>
+                <li><strong>DEV Tools:</strong> Netbeans, VS Code, GitHub, PyCharm, StarUML</li>
+                <li><strong>Technical Skills:</strong> DSA, DBMS, Software Testing, Object-Oriented Programming</li>
+                <li><strong>Other Skills:</strong> Problem Solving, Communication, Leadership</li>
+                <li><strong>Languages:</strong> English, Tamil</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="toggle" onclick="toggleContent('projects')">Projects</h2>
+            <ul id="projects" class="content">
+                <li><strong>Railway Reservation System</strong> - Built using Swing, SQL, JDBC with role-based access for admin and users.</li>
+                <li><strong>Student Management System</strong> - Python and SQL-based CRUD application for managing student records.</li>
+                <li><strong>Food Ordering System</strong> - MERN stack-based website for browsing menus, ordering, and managing transactions.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="toggle" onclick="toggleContent('certifications')">Certifications</h2>
+            <div id="certifications" class="content">
+                <p><a href="https://skillwallet.smartinternz.com/internships/mongo_db/79e785d63f00348ff360d5a86528580b">SmartInternz - MERN Full Stack</a></p>
+                <p><a href="https://www.linkedin.com/in/sabaregiri-vasan-7584422b1/">LinkedIn Profile</a></p>
+            </div>
+        </div>
+
+        <button onclick="toggleContent('contact')">Show Contact Details</button>
+        <div id="contact" class="content">
+            <p>Email: <a href="mailto:sabaregirivasan@gmail.com">sabaregirivasan@gmail.com</a></p>
+            <p>Phone: 9344920857</p>
+        </div>
+    </div>
+</body>
+</html>
